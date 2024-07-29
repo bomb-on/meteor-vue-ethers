@@ -1,10 +1,16 @@
 <script setup>
-import AppMenu from './AppMenu.vue'
+
 </script>
 
 <template>
-  <div class="p-8">
-    <AppMenu />
-    <router-view />
+  <div class="content">
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/public">Public</RouterLink>
+      <RouterLink to="/protected">Protected</RouterLink>
+      <button>Connect wallet</button>
+    </nav>
+    <hr />
+    <RouterView />
   </div>
 </template>
